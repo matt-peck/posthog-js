@@ -16,7 +16,6 @@ node_modules
 .mypy_cache
 package-lock.json
 .idea
-dist/*
 lib/
 static/*
 .yalc
@@ -30,3 +29,4 @@ stats.html
 bundle-stats*.html
 .eslintcache
 cypress/downloads/downloads.html
+# dist/*
