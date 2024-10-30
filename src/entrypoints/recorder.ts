@@ -547,6 +547,9 @@ function initFetchObserver(
                     networkRequest.requestBody = await _tryReadRequestBody({ r: req, options, url })
                 }
 
+                // eslint-disable-next-line
+                console.log('[POSTHOG] restorePatch', { url, init, req })
+                
                 start = win.performance.now()
                 res = await originalFetch(req)
                 end = win.performance.now()

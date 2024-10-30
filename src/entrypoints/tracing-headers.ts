@@ -19,6 +19,9 @@ const patchFetch = (sessionManager: SessionIdManager): (() => void) => {
 
             addTracingHeaders(sessionManager, req)
 
+            // eslint-disable-next-line
+            console.log('[POSTHOG] patchFetch', { url, init, req })
+
             return originalFetch(req)
         }
     })
